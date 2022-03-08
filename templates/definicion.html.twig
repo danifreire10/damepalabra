@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Palabra Aleatoria{% endblock %}
+
+{% block body %}
+    <div>
+        <h1> {{ palabra }} </h1>
+        <h3> {{ definicion }} </h3>
+        <p><a href="{{ path('palabraaleatoria', 
+        {"num" : number })  }}">Obtener otra palabra aleatoria!</a></p>
+    </div>
+{% endblock %}
